@@ -70,52 +70,44 @@ const purchases = [
 ];
 
 
-
 // #1 // 
 function getNumberEntries(object){
-  
+
 }
 
 
-
 // #2 // 
-const addKeyValuePairs = (object, additions) => {
- 
+const addKeyValuePairs = function(object, additions){
+  
 };
 
+               
 
-const filterByPrice = (array, price) => {
+// 3 //
+const filterByPrice = function(array, price){
+  
+};
+
+// 4 //
+const mapPurchases = function(array){
   
 };
 
 
-const mapPurchases = (array) => {
-
-};
-
-
-
 // #5 //
-const accumulateString = (array) => {
+const accumulateString = function(array){
   
 };
 
 
 // #6 //
-const findProduct = (array, product, output=[]) => {
-  
+const findProduct = function(array, product){
+ 
 };
-
 
 
 // #7 //
-const filterByReviewLength = (array) => {
+const filterByReviewLength = function(array){
   
 };
-
-
-
-
-
-
 
