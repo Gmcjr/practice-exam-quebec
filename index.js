@@ -71,9 +71,18 @@ const purchases = [
 
 
 // #1 // 
-function getNumberEntries(object){
-
-}
+function getNumberEntries(purchase){
+// iterate through object and return new array of subarrays
+let newArray = [];
+// if the value is a number
+  for (let key in purchase) {
+    if (typeof purchase[key] === 'number') {
+// each subarray should include the key and the value from the object
+      newArray.push([key , purchase[key]]);
+    }  
+  }
+  return newArray;
+};
 
 
 // #2 // 
