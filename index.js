@@ -105,7 +105,16 @@ return purchase
 
 // 3 //
 const filterByPrice = function(array, price){
-  
+// I: array (of purchase objects) and price(number)
+// O: new array of only items whose price > input price
+// C: use filter method
+// filter over array, callback function tests purchase object price
+// against price input parameter
+  let result = array.filter(function(purchase) {
+    return purchase.price > price;
+  });
+  // return only items that pass test
+  return result;
 };
 
 // 4 //
