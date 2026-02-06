@@ -86,8 +86,19 @@ let newArray = [];
 
 
 // #2 // 
-const addKeyValuePairs = function(object, additions){
-  
+const addKeyValuePairs = function(purchase, additions){
+// I: purchase object, addition(array of subarrays where each subarray is a key and value)
+// O: add each subbarray's key and value(from additions) to the object
+// and return object
+// iterate over additions array and access subarrays
+for (let i = 0; i < additions.length; i++) {
+  let subArray = additions[i];
+  let key = subArray[0];
+  let value = subArray[1];
+// add to purchase object
+  purchase[key] = value;
+}
+return purchase
 };
 
                
